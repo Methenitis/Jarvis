@@ -17,7 +17,7 @@ class VoiceTest(PluginTest):
 
     def test_gtts(self):
         # run "gtts" plugin code
-        self.jarvis_api.enable_gtts()
+        self.enable_gtts()
 
         # verify that "gtts" plugin code works
         self.assertEqual(self.jarvis_api.get_data('gtts_status'), True)
